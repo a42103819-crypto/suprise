@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposal Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="music-control">
+      <button id="audioToggle" class="glow-btn">Mute</button>
+      <audio id="bgAudio" loop preload="auto">
+        <source src="assets/music.mp3" type="audio/mp3" />
+        <source src="assets/music.ogg" type="audio/ogg" />
+      </audio>
+    </div>
+
+    <section class="page page-1 active" data-page="1">
+      <div class="clouds">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="glass-card">
+        <h1>WELCOME TO MY WEBSITE</h1>
+        <p class="subtitle">Specially made for someone very special ❤️</p>
+        <button class="page-btn glow-btn" data-target="2">START</button>
+      </div>
+    </section>
+
+    <section class="page page-2" data-page="2">
+      <div class="ribbon-layer"></div>
+      <div class="ribbon-layer"></div>
+      <div class="ribbon-layer"></div>
+      <div class="gift-boxes"></div>
+      <div class="sparkle-grid"></div>
+      <div class="glass-card">
+        <h1>A little surprise is waiting for you 🎁</h1>
+        <p class="subtitle">Wrapped with love and magical sparkles.</p>
+        <button class="page-btn glow-btn" data-target="3">NEXT</button>
+      </div>
+    </section>
+
+    <section class="page page-3" data-page="3">
+      <div class="background-stars"></div>
+      <div class="glass-card">
+        <h1>SEE YOUR MESSAGE</h1>
+        <p class="subtitle">A romantic moment is about to unfold.</p>
+        <button class="page-btn glow-btn" data-target="4">SEE YOUR MESSAGE</button>
+      </div>
+    </section>
+
+    <section class="page page-4" data-page="4">
+      <div class="background-stars"></div>
+      <div class="glass-card">
+        <div class="envelope">
+          <div class="flap"></div>
+          <div class="letter">
+            <p class="typewriter-text" data-text="Oye, it\'s for you ❤️"></p>
+          </div>
+        </div>
+        <button class="page-btn glow-btn" data-target="5">SHOW MESSAGE</button>
+      </div>
+    </section>
+
+    <section class="page page-5" data-page="5">
+      <div class="background-stars"></div>
+      <div class="glass-card message-card">
+        <div class="message-box">
+          <p class="message-text typewriter-text" data-text="YOU ARE LOOKING SO BEAUTIFUL\n\nYOU ARE NOT JUST A SPECIAL PERSON IN MY LIFE"></p>
+        </div>
+        <button class="page-btn glow-btn" data-target="6">SHOW FULL MESSAGE</button>
+      </div>
+    </section>
+
+    <section class="page page-6" data-page="6">
+      <div class="background-stars"></div>
+      <div class="glass-card message-card">
+        <div class="message-box">
+          <p class="message-text typewriter-text" data-text="YOU ARE THE OWNER OF MY HEART ❤️"></p>
+        </div>
+        <button class="page-btn glow-btn" data-target="7">SPECIAL MESSAGE FOR YOU</button>
+      </div>
+    </section>
+
+    <section class="page page-7" data-page="7">
+      <div class="background-stars"></div>
+      <div class="heart-layer"></div>
+      <div class="glass-card message-card">
+        <h1>SHOW SPECIAL MESSAGE</h1>
+        <p class="subtitle">A dreamy surprise is floating your way.</p>
+        <button class="page-btn glow-btn" data-target="8">SHOW SPECIAL MESSAGE</button>
+      </div>
+    </section>
+
+    <section class="page page-8" data-page="8">
+      <div class="background-stars"></div>
+      <div class="rose-layer"></div>
+      <div class="confetti-layer"></div>
+      <div class="glass-card message-card">
+        <div class="message-box">
+          <p class="message-text typewriter-text" data-text="I LOVE YOU FOREVER ❤️\n\nDo you accept my love, beauty?"></p>
+        </div>
+        <div class="spacer"></div>
+        <button id="yesBtn" class="page-btn glow-btn">YES ❤️</button>
+        <button id="maybeBtn" class="page-btn glow-btn">MAYBE 😊</button>
+        <div id="finalResult" class="result-card"><p>Choose your heart answer above.</p></div>
+      </div>
+      <footer class="final-footer">Thanks for visiting my website ❤️</footer>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
